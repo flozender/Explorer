@@ -122,19 +122,6 @@
               this
             );
           }
-          divide(t) {
-            var s, n, o;
-            return (
-              t.length
-                ? ((n = this),
-                  (o = t),
-                  ((s = this)[0] = n[0] / o[0]),
-                  (s[1] = n[1] / o[1]),
-                  (s[2] = n[2] / o[2]))
-                : a(this, this, 1 / t),
-              this
-            );
-          }
           inverse(t = this) {
             var s, n;
             return (
