@@ -17,11 +17,6 @@
             (t[0] = s[0] + n[0]), (t[1] = s[1] + n[1]), (t[2] = s[2] + n[2]), t
           );
         }
-        function r(t, s, n) {
-          return (
-            (t[0] = s[0] - n[0]), (t[1] = s[1] - n[1]), (t[2] = s[2] - n[2]), t
-          );
-        }
         function a(t, s, n) {
           return (t[0] = s[0] * n), (t[1] = s[1] * n), (t[2] = s[2] * n), t;
         }
@@ -119,19 +114,6 @@
                   (s[1] = n[1] * o[1]),
                   (s[2] = n[2] * o[2]))
                 : a(this, this, t),
-              this
-            );
-          }
-          divide(t) {
-            var s, n, o;
-            return (
-              t.length
-                ? ((n = this),
-                  (o = t),
-                  ((s = this)[0] = n[0] / o[0]),
-                  (s[1] = n[1] / o[1]),
-                  (s[2] = n[2] / o[2]))
-                : a(this, this, 1 / t),
               this
             );
           }
